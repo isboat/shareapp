@@ -47,6 +47,10 @@
     <Folder Include="Mock\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{2d9c20c4-ac95-4fb4-bcb9-c4ec34af4368}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DomainObjects\DomainObjects.csproj">
       <Project>{93DDDDD5-31D3-444D-8143-4286DB57CDF6}</Project>
       <Name>DomainObjects</Name>

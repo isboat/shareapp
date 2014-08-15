@@ -16,5 +16,11 @@ namespace DomainObjects
 
         [DataMember]
         public string Message { get; set; }
+
+        [DataMember]
+        public string DisplayName { get; set; }
+
+        [DataMember]
+        public int UserId { get; set; }
     }
 }
