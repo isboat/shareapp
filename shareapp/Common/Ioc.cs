@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace Common
 {
+    using System.Configuration;
+
+    using Microsoft.Practices.Unity;
+    using Microsoft.Practices.Unity.Configuration;
+
     public static class Ioc
     {
         private static IUnityContainer container;
