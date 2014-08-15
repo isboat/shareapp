@@ -4,19 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServiceProvider.Interfaces
+namespace DomainServices.Interfaces
 {
-    using System.ServiceModel;
-
     using DomainObjects;
 
-    [ServiceContract]
     public interface IAdminService
     {
-        [OperationContract]
-        LoginResponse AdminLogin(LoginRequest request);
+        LoginResponse AdminLogin(string username, string password);
 
-        [OperationContract]
         CreateAdminAcctResponse CreateAdminAccount(CreateAdminAccRequest request);
     }
 }

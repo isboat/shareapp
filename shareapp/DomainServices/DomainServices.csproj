@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{93DDDDD5-31D3-444D-8143-4286DB57CDF6}</ProjectGuid>
+    <ProjectGuid>{2ACF0CE6-DF6F-4490-AC76-4A34AF8F4D3A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DomainObjects</RootNamespace>
-    <AssemblyName>DomainObjects</AssemblyName>
+    <RootNamespace>DomainServices</RootNamespace>
+    <AssemblyName>DomainServices</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,7 +32,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,10 +39,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CreateAdminAccRequest.cs" />
-    <Compile Include="CreateAdminAcctResponse.cs" />
-    <Compile Include="LoginResponse.cs" />
+    <Compile Include="AdminService.cs" />
+    <Compile Include="Interfaces\IAdminService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mock\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DomainObjects\DomainObjects.csproj">
+      <Project>{93DDDDD5-31D3-444D-8143-4286DB57CDF6}</Project>
+      <Name>DomainObjects</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

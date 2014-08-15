@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ServiceProvider.Interfaces
 {
-    public interface IAssociationService
+    public interface IAssociationServiceApi
     {
     }
 }

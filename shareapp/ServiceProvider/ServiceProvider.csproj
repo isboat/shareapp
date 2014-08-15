@@ -59,16 +59,19 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Global.asax" />
     <Content Include="Service.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IAdminService.cs" />
-    <Compile Include="Interfaces\IAssociationService.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IAdminServiceApi.cs" />
+    <Compile Include="Interfaces\IAssociationServiceApi.cs" />
     <Compile Include="Service.svc.cs">
       <DependentUpon>Service.svc</DependentUpon>
     </Compile>
-    <Compile Include="IService1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -83,6 +86,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{623A196F-BED0-4F57-849F-7AC9D3382B23}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DomainObjects\DomainObjects.csproj">
       <Project>{93DDDDD5-31D3-444D-8143-4286DB57CDF6}</Project>
       <Name>DomainObjects</Name>
