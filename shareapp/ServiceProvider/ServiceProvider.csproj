@@ -94,6 +94,10 @@
       <Project>{93DDDDD5-31D3-444D-8143-4286DB57CDF6}</Project>
       <Name>DomainObjects</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DomainServices\DomainServices.csproj">
+      <Project>{2ACF0CE6-DF6F-4490-AC76-4A34AF8F4D3A}</Project>
+      <Name>DomainServices</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

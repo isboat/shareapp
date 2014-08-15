@@ -8,7 +8,11 @@ using System.Text;
 
 namespace ServiceProvider
 {
+    using Common;
+
     using DomainObjects;
+
+    using DomainServices.Interfaces;
 
     using ServiceProvider.Interfaces;
 
@@ -17,14 +21,24 @@ namespace ServiceProvider
     
     public class Service : IAdminServiceApi
     {
+        #region Instances variables
+
+        private readonly IAdminService adminService = Ioc.Resolve<IAdminService>();
+
+        #endregion
+
+        #region Admin
+
         public LoginResponse AdminLogin(string username, string password)
         {
-            return new LoginResponse();
+            return adminService.AdminLogin(username, password);
         }
 
         public CreateAdminAcctResponse CreateAdminAccount(CreateAdminAccRequest request)
         {
             return new CreateAdminAcctResponse();
         }
+
+        #endregion
     }
 }
