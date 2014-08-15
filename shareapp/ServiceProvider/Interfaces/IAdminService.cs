@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace ServiceProvider.Interfaces
 {
+    using System.ServiceModel;
+
+    using DomainObjects;
+
+    [ServiceContract]
     public interface IAdminService
     {
-        void CreateAssociation();
+        [OperationContract]
+        LoginResponse AdminLogin(LoginRequest request);
+
+        [OperationContract]
+        CreateAdminAcctResponse CreateAdminAccount(CreateAdminAccRequest request);
     }
 }

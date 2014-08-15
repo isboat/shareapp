@@ -8,26 +8,23 @@ using System.Text;
 
 namespace ServiceProvider
 {
+    using DomainObjects;
+
+    using ServiceProvider.Interfaces;
+
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
-    public class Service1 : IService1
+    
+    public class Service : IAdminService
     {
-        public string GetData(int value)
+        public LoginResponse AdminLogin(LoginRequest request)
         {
-            return string.Format("You entered: {0}", value);
+            return new LoginResponse();
         }
 
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        public CreateAdminAcctResponse CreateAdminAccount(CreateAdminAccRequest request)
         {
-            if (composite == null)
-            {
-                throw new ArgumentNullException("composite");
-            }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
+            return new CreateAdminAcctResponse();
         }
     }
 }
