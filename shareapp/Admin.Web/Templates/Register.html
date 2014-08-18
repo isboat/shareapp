@@ -1,19 +1,19 @@
 ﻿<div>
     <form>
         <div>
-            <label for="username">Username</label><input id="username" type="text" />
+            <label for="username">Username</label><input id="username" type="text" ng-model="ViewData.Username" ng-required="true" />
         </div>
         <div>
-            <label for="email">Email</label><input id="email" type="email" />
+            <label for="email">Email</label><input id="email" type="email" ng-model="ViewData.Email" ng-required="true" />
         </div>
         <div>
-            <label>Password</label><input type="password" />
+            <label>Password</label><input type="password" ng-model="ViewData.Password" ng-required="true" />
         </div>
         <div>
-            <label>Confirm Password</label><input type="password" />
+            <label>Confirm Password</label><input type="password" ng-model="ConfirmPassword" ng-required="true" />
         </div>
         <div>
-            <input type="submit" value="Register" />
+            <input type="submit" value="Register" ng-click="SubmitRegister()" />
         </div>
     </form>
 </div>

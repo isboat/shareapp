@@ -1,13 +1,13 @@
 ﻿<div>
     <form>
         <div>
-            <label for="username">Username:</label><input type="text" id="username" />
+            <label for="username">Username:</label><input type="text" id="username" ng-model="LoginViewData.Username" />
         </div>
         <div>
-            <label for="password">Password</label><input type="password" id="password" />
+            <label for="password">Password</label><input type="password" id="password" ng-model="LoginViewData.Password" />
         </div>
         <div>
-            <input type="submit" value="Login" />
+            <input type="submit" value="Login" ng-click="Login()" />
         </div>
     </form>
     <div>

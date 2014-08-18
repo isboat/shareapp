@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-var uiApp = angular.module('app', ['ngRoute'])
+var uiApp = angular.module('uiApp', ['ngRoute']);
 
 uiApp.config(function ($routeProvider) {
 

@@ -17,7 +17,13 @@ namespace Admin.Web.Controllers
         [HttpPost]
         public LoginResponseViewModel Login(LoginRequestViewModel request)
         {
-            return adminService.Login(request);
+            return this.adminService.Login(request);
+        }
+
+        [HttpPost]
+        public RegisterResponseViewModel Register(RegisterRequestViewModel request)
+        {
+            return new RegisterResponseViewModel();
         }
     }
 }

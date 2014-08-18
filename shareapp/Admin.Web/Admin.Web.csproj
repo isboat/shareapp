@@ -131,6 +131,8 @@
     <Compile Include="ModelServices\AdminService.cs" />
     <Compile Include="Models\LoginRequestViewModel.cs" />
     <Compile Include="Models\LoginResponseViewModel.cs" />
+    <Compile Include="Models\RegisterRequestViewModel.cs" />
+    <Compile Include="Models\RegisterResponseViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -139,7 +141,9 @@
     <Content Include="Scripts\App\app.js" />
     <Content Include="Scripts\App\Ctrs\loginController.js" />
     <Content Include="Scripts\App\Ctrs\registerController.js" />
-    <Content Include="Scripts\App\Services\loginService.js" />
+    <Content Include="Scripts\App\Services\webService.js" />
+    <Content Include="Scripts\App\Services\userService.js" />
+    <Content Include="Scripts\App\uiHelper.js" />
     <Content Include="Scripts\Lib\angular-route.js" />
     <Content Include="Scripts\Lib\angular-sanitize.js" />
     <Content Include="Scripts\Lib\angular.js" />
