@@ -7,11 +7,17 @@ using System.Web.Http;
 
 namespace Admin.Web.Controllers
 {
+    using Admin.Web.ModelServices;
+    using Admin.Web.Models;
+
     public class AdminController : ApiController
     {
-        public int Login()
+        private readonly AdminService adminService = new AdminService();
+
+        [HttpPost]
+        public LoginResponseViewModel Login(LoginRequestViewModel request)
         {
-            return 1;
+            return adminService.Login(request);
         }
     }
 }

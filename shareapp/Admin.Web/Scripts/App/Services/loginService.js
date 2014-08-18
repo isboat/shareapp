@@ -6,19 +6,22 @@ uiApp.factory('loginService', function ($http, $q) {
 
         Login: function () {
 
-            //var deferred = $q.defer();
-            var post = "dsfsf";
-            $http({
-                method: 'GET',
-                url: 'api/Admin/Login/'
-            }).success(function (data, status) {
-                //deferred.resolve(data);
-            })
-            .error(function (data, status) {
-                //defferred.reject(status);
-            });
+            var deferred = $q.defer();
+            
+            var post = {
+                Username: "fdsf",
+                Password: "dfdfs"
+            };
+            
+            $http({ method: 'POST', url: 'api/Admin/Login/', data: JSON.stringify(post), dataType: 'json' })
+                .success(function (data, status) {
+                    console.log(data);
+                })
+                .error(function (data, status) {
+                    deferred.reject(status);
+                });
 
-            return //deferred.promise;
+            return deferred.promise;
         }
     }
 
