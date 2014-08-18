@@ -139,6 +139,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\App\app.js" />
+    <Content Include="Scripts\App\Ctrs\indexController.js" />
     <Content Include="Scripts\App\Ctrs\loginController.js" />
     <Content Include="Scripts\App\Ctrs\registerController.js" />
     <Content Include="Scripts\App\Services\webService.js" />
@@ -148,6 +149,7 @@
     <Content Include="Scripts\Lib\angular-sanitize.js" />
     <Content Include="Scripts\Lib\angular.js" />
     <Content Include="Scripts\Lib\jquery.js" />
+    <Content Include="Templates\Index.html" />
     <Content Include="Templates\Login.html" />
     <Content Include="Templates\Register.html" />
     <Content Include="Web.config" />

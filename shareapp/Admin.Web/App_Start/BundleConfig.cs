@@ -18,6 +18,7 @@ namespace Admin.Web
                 "~/Scripts/App/app.js",
                 "~/Scripts/App/Ctrs/loginController.js",
                 "~/Scripts/App/Ctrs/registerController.js",
+                "~/Scripts/App/Ctrs/indexController.js",
                 "~/Scripts/App/Services/webService.js",
                 "~/Scripts/App/Services/userService.js",
                 "~/Scripts/App/uiHelper.js"));

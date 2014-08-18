@@ -6,6 +6,12 @@ uiApp.config(function ($routeProvider) {
 
     $routeProvider.when('/',
         {
+            templateUrl: 'Templates/Index.html',
+            controller: 'indexController'
+        });
+
+    $routeProvider.when('/login',
+        {
             templateUrl: 'Templates/Login.html',
             controller: 'loginController'
         });
