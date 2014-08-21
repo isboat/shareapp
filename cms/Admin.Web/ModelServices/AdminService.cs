@@ -2,8 +2,18 @@
 
 namespace Cms.Admin.Web.ModelServices
 {
+    using Cms.Admin.Web.ServiceProvider;
+
     public class AdminService
     {
+        #region instance variables
+
+        /// <summary>
+        /// The admin service api.
+        /// </summary>
+        private readonly AdminServiceApiClient adminServiceApi = new AdminServiceApiClient();
+
+        #endregion
         /// <summary>
         /// The login.
         /// </summary>
@@ -15,7 +25,9 @@ namespace Cms.Admin.Web.ModelServices
         /// </returns>
         public LoginResponseViewModel Login(LoginRequestViewModel request)
         {
-            return new LoginResponseViewModel { Success = true};
+            var response = this.adminServiceApi.AdminLogin(request.Username, request.Password);
+
+            return new LoginResponseViewModel { Success = response.Success };
         }
     }
 }
