@@ -12,6 +12,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cms.DataAccess", "DataAccess\Cms.DataAccess.csproj", "{2D9C20C4-AC95-4FB4-BCB9-C4EC34AF4368}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cms.Admin.Web", "Admin.Web\Cms.Admin.Web.csproj", "{9FA96DAD-BF37-4248-BBA5-56DBB6CC0DA0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9D08106F-B4B2-472D-A0BB-A55DE0AC52E6} = {9D08106F-B4B2-472D-A0BB-A55DE0AC52E6}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
