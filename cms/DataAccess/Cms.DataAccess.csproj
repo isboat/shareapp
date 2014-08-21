@@ -7,8 +7,8 @@
     <ProjectGuid>{2D9C20C4-AC95-4FB4-BCB9-C4EC34AF4368}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataAccess</RootNamespace>
-    <AssemblyName>DataAccess</AssemblyName>
+    <RootNamespace>Cms.DataAccess</RootNamespace>
+    <AssemblyName>Cms.DataAccess</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

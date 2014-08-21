@@ -7,8 +7,8 @@
     <ProjectGuid>{93DDDDD5-31D3-444D-8143-4286DB57CDF6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DomainObjects</RootNamespace>
-    <AssemblyName>DomainObjects</AssemblyName>
+    <RootNamespace>Cms.DomainObjects</RootNamespace>
+    <AssemblyName>Cms.DomainObjects</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

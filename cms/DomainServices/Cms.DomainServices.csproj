@@ -7,8 +7,8 @@
     <ProjectGuid>{2ACF0CE6-DF6F-4490-AC76-4A34AF8F4D3A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DomainServices</RootNamespace>
-    <AssemblyName>DomainServices</AssemblyName>
+    <RootNamespace>Cms.DomainServices</RootNamespace>
+    <AssemblyName>Cms.DomainServices</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
