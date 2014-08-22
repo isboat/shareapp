@@ -8,15 +8,19 @@ uiApp.controller('registerController', function ($scope, $location, webService, 
     }
 
     $scope.registerStatus = '';
+    $scope.registerMessage = 'Please register';
     var postUrl = 'api/Admin/Register/';
 
     $scope.ViewData = {};
 
     $scope.SubmitRegister = function () {
+
+        if (!$scope.ViewData || !$scope.ViewData.Orgname || !$scope.ViewData.Username || !$scope.ViewData.Password) {
+            return;
+        }
+
         if ($scope.ViewData.Password != $scope.ConfirmPassword) {
-            //$scope.registerStatus = 'error';
             $scope.registerMessage = 'Password doesn\'t match the confirmation.';
-            //uiHelper.ShowMessage({ Type: 'error', Message: 'Password doesn\'t match the confirmation.' });
             return;
         }
         

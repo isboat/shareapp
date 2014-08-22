@@ -7,7 +7,7 @@ uiApp.controller('loginController', function ($scope, $location, webService, use
     }
 
     $scope.loginStatus = '';
-    $scope.loginMessage = '';
+    $scope.loginMessage = 'Please sign in';
     var url = 'api/Admin/Login/';
 
     $scope.LoginViewData = {};
