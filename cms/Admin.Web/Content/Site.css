@@ -14,6 +14,11 @@
     visibility: hidden;
 }
 
+.menu-bar {
+    background-color: #3f4549;
+    border-bottom: 4px solid #000;
+}
+
 .icon-logo {
     background-image: url('../Images/logo.png');
     background-size: 45px 45px;
