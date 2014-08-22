@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminUser.cs" />
-    <Compile Include="CreateAdminAccRequest.cs" />
+    <Compile Include="BaseResponse.cs" />
     <Compile Include="CreateAdminAcctResponse.cs" />
     <Compile Include="LoginResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

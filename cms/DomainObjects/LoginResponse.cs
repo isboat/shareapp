@@ -9,14 +9,8 @@ namespace Cms.DomainObjects
     using System.Runtime.Serialization;
 
     [DataContract]
-    public class LoginResponse
+    public class LoginResponse : BaseResponse
     {
-        [DataMember]
-        public bool Success { get; set; }
-
-        [DataMember]
-        public string Message { get; set; }
-
         [DataMember]
         public string DisplayName { get; set; }
 

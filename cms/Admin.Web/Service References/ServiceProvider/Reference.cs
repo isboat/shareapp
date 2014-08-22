@@ -15,24 +15,20 @@ namespace Cms.Admin.Web.ServiceProvider {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="LoginResponse", Namespace="http://schemas.datacontract.org/2004/07/Cms.DomainObjects")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="BaseResponse", Namespace="http://schemas.datacontract.org/2004/07/Cms.DomainObjects")]
     [System.SerializableAttribute()]
-    public partial class LoginResponse : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Cms.Admin.Web.ServiceProvider.CreateAdminAcctResponse))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(Cms.Admin.Web.ServiceProvider.LoginResponse))]
+    public partial class BaseResponse : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DisplayNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string MessageField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private bool SuccessField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int UserIdField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -41,19 +37,6 @@ namespace Cms.Admin.Web.ServiceProvider {
             }
             set {
                 this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string DisplayName {
-            get {
-                return this.DisplayNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DisplayNameField, value) != true)) {
-                    this.DisplayNameField = value;
-                    this.RaisePropertyChanged("DisplayName");
-                }
             }
         }
         
@@ -83,48 +66,6 @@ namespace Cms.Admin.Web.ServiceProvider {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int UserId {
-            get {
-                return this.UserIdField;
-            }
-            set {
-                if ((this.UserIdField.Equals(value) != true)) {
-                    this.UserIdField = value;
-                    this.RaisePropertyChanged("UserId");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CreateAdminAccRequest", Namespace="http://schemas.datacontract.org/2004/07/Cms.DomainObjects")]
-    [System.SerializableAttribute()]
-    public partial class CreateAdminAccRequest : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
@@ -139,27 +80,44 @@ namespace Cms.Admin.Web.ServiceProvider {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="CreateAdminAcctResponse", Namespace="http://schemas.datacontract.org/2004/07/Cms.DomainObjects")]
     [System.SerializableAttribute()]
-    public partial class CreateAdminAcctResponse : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class CreateAdminAcctResponse : Cms.Admin.Web.ServiceProvider.BaseResponse {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="LoginResponse", Namespace="http://schemas.datacontract.org/2004/07/Cms.DomainObjects")]
+    [System.SerializableAttribute()]
+    public partial class LoginResponse : Cms.Admin.Web.ServiceProvider.BaseResponse {
         
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string DisplayNameField;
         
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int UserIdField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string DisplayName {
             get {
-                return this.extensionDataField;
+                return this.DisplayNameField;
             }
             set {
-                this.extensionDataField = value;
+                if ((object.ReferenceEquals(this.DisplayNameField, value) != true)) {
+                    this.DisplayNameField = value;
+                    this.RaisePropertyChanged("DisplayName");
+                }
             }
         }
         
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int UserId {
+            get {
+                return this.UserIdField;
+            }
+            set {
+                if ((this.UserIdField.Equals(value) != true)) {
+                    this.UserIdField = value;
+                    this.RaisePropertyChanged("UserId");
+                }
             }
         }
     }
@@ -175,10 +133,10 @@ namespace Cms.Admin.Web.ServiceProvider {
         System.Threading.Tasks.Task<Cms.Admin.Web.ServiceProvider.LoginResponse> AdminLoginAsync(string username, string password);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdminServiceApi/CreateAdminAccount", ReplyAction="http://tempuri.org/IAdminServiceApi/CreateAdminAccountResponse")]
-        Cms.Admin.Web.ServiceProvider.CreateAdminAcctResponse CreateAdminAccount(Cms.Admin.Web.ServiceProvider.CreateAdminAccRequest request);
+        Cms.Admin.Web.ServiceProvider.CreateAdminAcctResponse CreateAdminAccount(string orgName, string username, string email, string password);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdminServiceApi/CreateAdminAccount", ReplyAction="http://tempuri.org/IAdminServiceApi/CreateAdminAccountResponse")]
-        System.Threading.Tasks.Task<Cms.Admin.Web.ServiceProvider.CreateAdminAcctResponse> CreateAdminAccountAsync(Cms.Admin.Web.ServiceProvider.CreateAdminAccRequest request);
+        System.Threading.Tasks.Task<Cms.Admin.Web.ServiceProvider.CreateAdminAcctResponse> CreateAdminAccountAsync(string orgName, string username, string email, string password);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -216,12 +174,12 @@ namespace Cms.Admin.Web.ServiceProvider {
             return base.Channel.AdminLoginAsync(username, password);
         }
         
-        public Cms.Admin.Web.ServiceProvider.CreateAdminAcctResponse CreateAdminAccount(Cms.Admin.Web.ServiceProvider.CreateAdminAccRequest request) {
-            return base.Channel.CreateAdminAccount(request);
+        public Cms.Admin.Web.ServiceProvider.CreateAdminAcctResponse CreateAdminAccount(string orgName, string username, string email, string password) {
+            return base.Channel.CreateAdminAccount(orgName, username, email, password);
         }
         
-        public System.Threading.Tasks.Task<Cms.Admin.Web.ServiceProvider.CreateAdminAcctResponse> CreateAdminAccountAsync(Cms.Admin.Web.ServiceProvider.CreateAdminAccRequest request) {
-            return base.Channel.CreateAdminAccountAsync(request);
+        public System.Threading.Tasks.Task<Cms.Admin.Web.ServiceProvider.CreateAdminAcctResponse> CreateAdminAccountAsync(string orgName, string username, string email, string password) {
+            return base.Channel.CreateAdminAccountAsync(orgName, username, email, password);
         }
     }
 }

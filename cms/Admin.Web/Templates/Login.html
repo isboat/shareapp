@@ -1,16 +1,19 @@
-﻿<div>
-    <form>
+﻿<div class=" fullscreen {{loginStatus}}">
+    <div class="login-form">
+        <div class="header">{{loginMessage}}</div>
+        <form>
+            <div>
+                <input type="text" id="username" ng-model="LoginViewData.Username" placeholder="Username" class="inputText" />
+            </div>
+            <div>
+                <input type="password" id="password" ng-model="LoginViewData.Password" placeholder="Password" class="inputText" />
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Login" ng-click="Login()" class="btn" />
+            </div>
+        </form>
         <div>
-            <label for="username">Username:</label><input type="text" id="username" ng-model="LoginViewData.Username" />
+            <a href="#/register">Register</a>
         </div>
-        <div>
-            <label for="password">Password</label><input type="password" id="password" ng-model="LoginViewData.Password" />
-        </div>
-        <div>
-            <input type="submit" value="Login" ng-click="Login()" />
-        </div>
-    </form>
-    <div>
-        <a href="#/register">Register</a>
     </div>
 </div>

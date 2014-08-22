@@ -18,7 +18,7 @@ namespace Cmss.Admin.Web.Controllers
         [HttpPost]
         public RegisterResponseViewModel Register(RegisterRequestViewModel request)
         {
-            return new RegisterResponseViewModel();
+            return this.adminService.Register(request);
         }
     }
 }

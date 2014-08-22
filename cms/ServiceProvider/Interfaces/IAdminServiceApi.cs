@@ -11,6 +11,6 @@
         LoginResponse AdminLogin(string username, string password);
 
         [OperationContract]
-        CreateAdminAcctResponse CreateAdminAccount(CreateAdminAccRequest request);
+        CreateAdminAcctResponse CreateAdminAccount(string orgName, string username, string email, string password);
     }
 }

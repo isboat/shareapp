@@ -5,12 +5,8 @@ using System.Web;
 
 namespace Cms.Admin.Web.Models
 {
-    public class LoginResponseViewModel
+    public class LoginResponseViewModel : BaseResponseViewModel
     {
-        public bool Success { get; set; }
-
-        public string Message { get; set; }
-
         public string DisplayName { get; set; }
 
         public int UserId { get; set; }

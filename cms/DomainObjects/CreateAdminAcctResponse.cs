@@ -9,7 +9,8 @@ namespace Cms.DomainObjects
     using System.Runtime.Serialization;
 
     [DataContract]
-    public class CreateAdminAcctResponse
+    public class CreateAdminAcctResponse : BaseResponse
     {
+        public string OrgId { get; set; }
     }
 }

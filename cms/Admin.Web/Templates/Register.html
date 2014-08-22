@@ -1,19 +1,25 @@
-﻿<div>
-    <form>
-        <div>
-            <label for="username">Username</label><input id="username" type="text" ng-model="ViewData.Username" ng-required="true" />
-        </div>
-        <div>
-            <label for="email">Email</label><input id="email" type="email" ng-model="ViewData.Email" ng-required="true" />
-        </div>
-        <div>
-            <label>Password</label><input type="password" ng-model="ViewData.Password" ng-required="true" />
-        </div>
-        <div>
-            <label>Confirm Password</label><input type="password" ng-model="ConfirmPassword" ng-required="true" />
-        </div>
-        <div>
-            <input type="submit" value="Register" ng-click="SubmitRegister()" />
-        </div>
-    </form>
+﻿<div class="fullscreen {{registerStatus}}">
+    <div class="login-form">
+        <div class="header">{{registerMessage}}</div>
+        <form>
+            <div>
+                <input id="orgname" type="text" ng-model="ViewData.Orgname" ng-required="true" class="inputText" placeholder="Organistion name" />
+            </div>
+            <div>
+                <input id="username" type="text" ng-model="ViewData.Username" ng-required="true" class="inputText" placeholder="Username" />
+            </div>
+            <div>
+                <input id="email" type="email" ng-model="ViewData.Email" ng-required="true" class="inputText" placeholder="Email" />
+            </div>
+            <div>
+                <input type="password" ng-model="ViewData.Password" ng-required="true" placeholder="Password" class="inputText" />
+            </div>
+            <div>
+                <input type="password" ng-model="ConfirmPassword" ng-required="true" class="inputText" placeholder="Confrim Password" />
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Register" ng-click="SubmitRegister()" class="btn" />
+            </div>
+        </form>
+    </div>
 </div>

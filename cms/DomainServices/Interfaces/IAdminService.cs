@@ -6,6 +6,6 @@
     {
         LoginResponse AdminLogin(string username, string password);
 
-        CreateAdminAcctResponse CreateAdminAccount(CreateAdminAccRequest request);
+        //CreateAdminAcctResponse CreateAdminAccount(CreateAdminAccRequest request);
     }
 }

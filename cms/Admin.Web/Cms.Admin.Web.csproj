@@ -131,6 +131,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="ModelServices\AdminService.cs" />
+    <Compile Include="Models\BaseResponseViewModel.cs" />
     <Compile Include="Models\LoginRequestViewModel.cs" />
     <Compile Include="Models\LoginResponseViewModel.cs" />
     <Compile Include="Models\RegisterRequestViewModel.cs" />
@@ -162,13 +163,13 @@
     <Content Include="Service References\ServiceProvider\Cms.Admin.Web.ServiceProvider.LoginResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Service References\ServiceProvider\Service.disco" />
-    <Content Include="Service References\ServiceProvider\configuration91.svcinfo" />
-    <Content Include="Service References\ServiceProvider\configuration.svcinfo" />
-    <Content Include="Service References\ServiceProvider\Reference.svcmap">
+    <None Include="Service References\ServiceProvider\Service.disco" />
+    <None Include="Service References\ServiceProvider\configuration91.svcinfo" />
+    <None Include="Service References\ServiceProvider\configuration.svcinfo" />
+    <None Include="Service References\ServiceProvider\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
-    </Content>
+    </None>
     <Content Include="Templates\Index.html" />
     <Content Include="Templates\Login.html" />
     <Content Include="Templates\Register.html" />
@@ -215,7 +216,7 @@
     <WCFMetadataStorage Include="Service References\ServiceProvider\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Service References\ServiceProvider\Service.wsdl" />
+    <None Include="Service References\ServiceProvider\Service.wsdl" />
     <None Include="Service References\ServiceProvider\Service.xsd">
       <SubType>Designer</SubType>
     </None>

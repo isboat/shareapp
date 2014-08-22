@@ -9,7 +9,12 @@ namespace Cms.DomainObjects
     using System.Runtime.Serialization;
 
     [DataContract]
-    public class CreateAdminAccRequest
+    public class BaseResponse
     {
+        [DataMember]
+        public bool Success { get; set; }
+
+        [DataMember]
+        public string Message { get; set; }
     }
 }

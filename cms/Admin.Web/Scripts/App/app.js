@@ -1,15 +1,15 @@
 ﻿'use strict';
 
-var uiApp = angular.module('uiApp', ['ngRoute']);
+var uiApp = angular.module('uiApp', ['ngRoute', 'ngSanitize']);
 
 uiApp.config(function ($routeProvider) {
 
-    $routeProvider.when('/',
+    $routeProvider.when('/:id/home',
         {
             templateUrl: 'Templates/Index.html',
             controller: 'indexController'
         });
-
+    
     $routeProvider.when('/login',
         {
             templateUrl: 'Templates/Login.html',
@@ -22,7 +22,7 @@ uiApp.config(function ($routeProvider) {
             controller: 'registerController'
         });
 
-    $routeProvider.otherwise({ redirectTo: '/' });
+    $routeProvider.otherwise({ redirectTo: '/login' });
 
 });
 

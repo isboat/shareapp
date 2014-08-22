@@ -23,9 +23,9 @@
             return adminService.AdminLogin(username, password);
         }
 
-        public CreateAdminAcctResponse CreateAdminAccount(CreateAdminAccRequest request)
+        public CreateAdminAcctResponse CreateAdminAccount(string orgName, string username, string email, string password)
         {
-            return new CreateAdminAcctResponse();
+            return new CreateAdminAcctResponse { Message = "Created org", OrgId = "abcd1234", Success = true };
         }
 
         #endregion

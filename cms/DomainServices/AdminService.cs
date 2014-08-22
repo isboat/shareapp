@@ -45,10 +45,5 @@ namespace Cms.DomainServices
 
             return response;
         }
-
-        public CreateAdminAcctResponse CreateAdminAccount(CreateAdminAccRequest request)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

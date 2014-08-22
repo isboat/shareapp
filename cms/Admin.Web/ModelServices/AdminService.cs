@@ -27,7 +27,23 @@ namespace Cms.Admin.Web.ModelServices
         {
             var response = this.adminServiceApi.AdminLogin(request.Username, request.Password);
 
-            return new LoginResponseViewModel { Success = response.Success };
+            return new LoginResponseViewModel { Success = response.Success, Message = response.Message };
+        }
+
+        public RegisterResponseViewModel Register(RegisterRequestViewModel request)
+        {
+            var response = this.adminServiceApi.CreateAdminAccount(
+                request.OrgName, request.Username, request.Email, request.Password);
+
+            var result = new RegisterResponseViewModel();
+            
+            if (response != null)
+            {
+                result.Success = response.Success;
+                result.Message = response.Message;
+            }
+
+            return result;
         }
     }
 }
