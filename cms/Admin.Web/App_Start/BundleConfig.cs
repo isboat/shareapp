@@ -20,6 +20,8 @@ namespace Cms.Admin.Web
                 "~/Scripts/App/Ctrs/registerController.js",
                 "~/Scripts/App/Ctrs/indexController.js",
                 "~/Scripts/App/Ctrs/videoController.js",
+                "~/Scripts/App/Ctrs/audioController.js",
+                "~/Scripts/App/Ctrs/messageController.js",
                 "~/Scripts/App/Services/webService.js",
                 "~/Scripts/App/Services/userService.js",
                 "~/Scripts/App/uiHelper.js",

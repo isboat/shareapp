@@ -15,6 +15,18 @@ uiApp.config(function ($routeProvider) {
             templateUrl: 'Templates/Video.html',
             controller: 'videoController'
         });
+
+    $routeProvider.when('/:id/audio',
+        {
+            templateUrl: 'Templates/Audio.html',
+            controller: 'audioController'
+        });
+
+    $routeProvider.when('/:id/message',
+        {
+            templateUrl: 'Templates/Message.html',
+            controller: 'messageController'
+        });
     
     $routeProvider.when('/login',
         {

@@ -2,8 +2,10 @@
 
 uiApp.controller('loginController', function ($scope, $location, webService, userService) {
 
+    $scope.cmsId = userService.GetCmsId();
+
     if (userService.IsLoggedIn()) {
-        $location.path('/bccd1234/home');
+        $location.path('/' + $scope.cmsId+ '/home');
     }
 
     $scope.loginStatus = '';

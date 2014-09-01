@@ -150,6 +150,8 @@
     <Content Include="Images\logo.png" />
     <Content Include="Scripts\App\app.js" />
     <Content Include="Scripts\App\appSettings.js" />
+    <Content Include="Scripts\App\Ctrs\audioController.js" />
+    <Content Include="Scripts\App\Ctrs\messageController.js" />
     <Content Include="Scripts\App\Ctrs\indexController.js" />
     <Content Include="Scripts\App\Ctrs\loginController.js" />
     <Content Include="Scripts\App\Ctrs\registerController.js" />
@@ -174,6 +176,8 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Templates\Audio.html" />
+    <Content Include="Templates\Message.html" />
     <Content Include="Templates\Index.html" />
     <Content Include="Templates\Login.html" />
     <Content Include="Templates\Register.html" />
