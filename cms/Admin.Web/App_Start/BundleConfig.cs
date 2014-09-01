@@ -19,9 +19,11 @@ namespace Cms.Admin.Web
                 "~/Scripts/App/Ctrs/loginController.js",
                 "~/Scripts/App/Ctrs/registerController.js",
                 "~/Scripts/App/Ctrs/indexController.js",
+                "~/Scripts/App/Ctrs/videoController.js",
                 "~/Scripts/App/Services/webService.js",
                 "~/Scripts/App/Services/userService.js",
-                "~/Scripts/App/uiHelper.js"));
+                "~/Scripts/App/uiHelper.js",
+                "~/Scripts/App/appSettings.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
         }

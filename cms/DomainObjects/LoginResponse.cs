@@ -15,6 +15,6 @@ namespace Cms.DomainObjects
         public string DisplayName { get; set; }
 
         [DataMember]
-        public int UserId { get; set; }
+        public string Username { get; set; }
     }
 }

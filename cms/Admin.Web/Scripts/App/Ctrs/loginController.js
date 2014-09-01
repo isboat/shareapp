@@ -19,6 +19,7 @@ uiApp.controller('loginController', function ($scope, $location, webService, use
                 function(data) {
                     if (data.Success) {
                         userService.SetLogin(data);
+                        userService.SetAppSettings(data);
                         $location.path('/');
                     } else {
                         $scope.loginMessage = data.Message;

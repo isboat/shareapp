@@ -10,6 +10,6 @@ namespace Cms.DomainObjects
     {
         public string DisplayName { get; set; }
 
-        public int UserId { get; set; }
+        public string Username { get; set; }
     }
 }

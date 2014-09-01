@@ -1,20 +1,7 @@
 ﻿<div class="menu-bar">
-    Menu bar
-    <ul>
-        <li>
-            <a href="#">
-                <span>Home</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <span>Home</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <span>Home</span>
-            </a>
-        </li>
-    </ul>
+    <div ng-repeat="item in menuItems" ng-class="{curPage: item == curPage}" class="{{item}}">
+        <a href="#/{{cmsId}}/{{item}}">
+            <span>{{item}}</span>
+        </a>
+    </div>
 </div>

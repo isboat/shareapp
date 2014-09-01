@@ -19,6 +19,16 @@
     border-bottom: 4px solid #000;
 }
 
+    .menu-bar div {
+        display: inline-block;
+        width: 87px;
+        background-color: #999;
+        margin-right: 5px;
+        text-align: center;
+    }
+a {
+    color: #fff;
+}
 .icon-logo {
     background-image: url('../Images/logo.png');
     background-size: 45px 45px;

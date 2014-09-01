@@ -149,9 +149,11 @@
     <Content Include="Images\small_logo.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Scripts\App\app.js" />
+    <Content Include="Scripts\App\appSettings.js" />
     <Content Include="Scripts\App\Ctrs\indexController.js" />
     <Content Include="Scripts\App\Ctrs\loginController.js" />
     <Content Include="Scripts\App\Ctrs\registerController.js" />
+    <Content Include="Scripts\App\Ctrs\videoController.js" />
     <Content Include="Scripts\App\Services\webService.js" />
     <Content Include="Scripts\App\Services\userService.js" />
     <Content Include="Scripts\App\uiHelper.js" />
@@ -176,6 +178,7 @@
     <Content Include="Templates\Login.html" />
     <Content Include="Templates\Register.html" />
     <Content Include="Templates\Shared\MenuBar.html" />
+    <Content Include="Templates\Video.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

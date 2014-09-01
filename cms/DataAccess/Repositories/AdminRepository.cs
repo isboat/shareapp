@@ -9,7 +9,7 @@
         {
             if (username == "aaa")
             {
-                return new AdminUser();
+                return new AdminUser { Username = username };
             }
             return null;
         }

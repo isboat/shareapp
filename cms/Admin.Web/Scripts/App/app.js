@@ -9,6 +9,12 @@ uiApp.config(function ($routeProvider) {
             templateUrl: 'Templates/Index.html',
             controller: 'indexController'
         });
+
+    $routeProvider.when('/:id/video',
+        {
+            templateUrl: 'Templates/Video.html',
+            controller: 'videoController'
+        });
     
     $routeProvider.when('/login',
         {

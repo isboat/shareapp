@@ -34,7 +34,7 @@ namespace Cms.DomainServices
                 if (user != null)
                 {
                     response.DisplayName = user.DisplayName;
-                    response.UserId = user.UserId;
+                    response.Username = user.Username;
                     response.Success = true;
                 }
                 else
