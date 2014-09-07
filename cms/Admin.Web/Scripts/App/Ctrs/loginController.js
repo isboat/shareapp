@@ -17,8 +17,10 @@ uiApp.controller('loginController', function ($scope, $location, webService, use
     $scope.Login = function () {
         
         if ($scope.LoginViewData && $scope.LoginViewData.Username && $scope.LoginViewData.Password) {
+            uiHelper.ShowLoading();
             webService.PostData($scope.LoginViewData, url).then(
-                function(data) {
+                function (data) {
+                    uiHelper.HideLoading();
                     if (data.Success) {
                         userService.SetLogin(data);
                         userService.SetAppSettings(data);
@@ -29,7 +31,8 @@ uiApp.controller('loginController', function ($scope, $location, webService, use
                         //uiHelper.ShowMessage({ Type: 'error', Message: data.Message });
                     }
                 },
-                function(status) {
+                function (status) {
+                    uiHelper.HideLoading();
                     alert(status);
                 });
         } else {

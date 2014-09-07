@@ -146,6 +146,7 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\loading.gif" />
     <Content Include="Images\small_logo.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Scripts\App\app.js" />

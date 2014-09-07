@@ -1,4 +1,13 @@
-﻿.float-left {
+﻿.loading {
+    background: #000;
+    z-index: 10000000;
+    position: fixed;
+    opacity: 0.5;
+    background-image: url(/Images/loading.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.float-left {
     float: left;
 }
 
