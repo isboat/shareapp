@@ -159,6 +159,7 @@
     <Content Include="Scripts\App\Services\webService.js" />
     <Content Include="Scripts\App\Services\userService.js" />
     <Content Include="Scripts\App\uiHelper.js" />
+    <Content Include="Scripts\Lib\angular-animate.js" />
     <Content Include="Scripts\Lib\angular-route.js" />
     <Content Include="Scripts\Lib\angular-sanitize.js" />
     <Content Include="Scripts\Lib\angular.js" />

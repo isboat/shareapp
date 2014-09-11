@@ -12,7 +12,8 @@ namespace Cms.Admin.Web
                         "~/Scripts/Lib/jquery.js", 
                         "~/Scripts/Lib/angular.js",
                         "~/Scripts/Lib/angular-route.js",
-                        "~/Scripts/Lib/angular-sanitize.js"));
+                        "~/Scripts/Lib/angular-sanitize.js",
+                        "~/Scripts/Lib/angular-animate.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                 "~/Scripts/App/app.js",
