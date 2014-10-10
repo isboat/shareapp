@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-var uiApp = angular.module('uiApp', ['ngRoute', 'ngSanitize', 'ngAnimate']);
+var uiApp = angular.module('uiApp', ['ui.bootstrap', 'ngRoute', 'ngSanitize', 'ngAnimate']);
 
 uiApp.config(function ($routeProvider) {
 

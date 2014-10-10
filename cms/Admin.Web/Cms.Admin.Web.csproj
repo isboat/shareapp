@@ -143,6 +143,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Images\loading.gif" />
@@ -151,6 +152,7 @@
     <Content Include="Scripts\App\app.js" />
     <Content Include="Scripts\App\appSettings.js" />
     <Content Include="Scripts\App\Ctrs\audioController.js" />
+    <Content Include="Scripts\App\Ctrs\menuBarController.js" />
     <Content Include="Scripts\App\Ctrs\messageController.js" />
     <Content Include="Scripts\App\Ctrs\indexController.js" />
     <Content Include="Scripts\App\Ctrs\loginController.js" />
@@ -164,6 +166,7 @@
     <Content Include="Scripts\Lib\angular-sanitize.js" />
     <Content Include="Scripts\Lib\angular.js" />
     <Content Include="Scripts\Lib\jquery.js" />
+    <Content Include="Scripts\Lib\ui-bootstrap.js" />
     <Content Include="Service References\ServiceProvider\Cms.Admin.Web.ServiceProvider.CreateAdminAcctResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>

@@ -1,4 +1,6 @@
-﻿.loading {
+﻿.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.loading {
     background: #000;
     z-index: 10000000;
     position: fixed;
@@ -22,19 +24,6 @@
     height: 0;
     visibility: hidden;
 }
-
-.menu-bar {
-    background-color: #3f4549;
-    border-bottom: 4px solid #000;
-}
-
-    .menu-bar div {
-        display: inline-block;
-        width: 87px;
-        background-color: #999;
-        margin-right: 5px;
-        text-align: center;
-    }
 a {
     color: #fff;
 }

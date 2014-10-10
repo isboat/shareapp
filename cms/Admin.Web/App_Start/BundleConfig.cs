@@ -13,12 +13,14 @@ namespace Cms.Admin.Web
                         "~/Scripts/Lib/angular.js",
                         "~/Scripts/Lib/angular-route.js",
                         "~/Scripts/Lib/angular-sanitize.js",
-                        "~/Scripts/Lib/angular-animate.js"));
+                        "~/Scripts/Lib/angular-animate.js",
+                        "~/Scripts/Lib/ui-bootstrap.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                 "~/Scripts/App/app.js",
                 "~/Scripts/App/Ctrs/loginController.js",
                 "~/Scripts/App/Ctrs/registerController.js",
+                "~/Scripts/App/Ctrs/menuBarController.js",
                 "~/Scripts/App/Ctrs/indexController.js",
                 "~/Scripts/App/Ctrs/videoController.js",
                 "~/Scripts/App/Ctrs/audioController.js",
@@ -28,7 +30,9 @@ namespace Cms.Admin.Web
                 "~/Scripts/App/uiHelper.js",
                 "~/Scripts/App/appSettings.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Content/css").Include(
+                "~/Content/site.css",
+                "~/Content/bootstrap.css"));
         }
     }
 }

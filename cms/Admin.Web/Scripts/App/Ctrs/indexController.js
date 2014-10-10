@@ -7,10 +7,4 @@ uiApp.controller('indexController', function ($scope, $location, webService, use
     if (!userService.IsLoggedIn()) {
         $location.path( '/login');
     }
-
-    $scope.menuItems = appSettings.MenuItems;
-    var path = $location.$$path.split('/');
-    $scope.curPage = path[2];
-
-
 })
