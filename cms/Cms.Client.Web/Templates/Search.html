@@ -1,1 +1,18 @@
-﻿<div> Search page</div>
+﻿<div class=" fullscreen">
+    <div class="login-form">
+        <div class="icon-logo"></div>
+        <div class="header">{{loginMessage}}</div>
+        <form ng-animate="animate">
+            <div>
+                <input type="text" id="search" ng-model="SearchText" ng-change="search()" placeholder="Search" class="inputText" />
+            </div>
+            <div class="buttons favs">    
+                <div>Favourites</div>
+                <ul>
+                    <li>Fav one <a href="#/register">Register</a></li>
+                    <li>Fav two</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</div>
