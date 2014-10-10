@@ -7,4 +7,12 @@ uiApp.controller('indexController', function ($scope, $location, webService, use
     if (!userService.IsLoggedIn()) {
         $location.path( '/login');
     }
+
+    $scope.save = function () {
+        console.log($scope.OrgViewData);
+    };
+
+    $scope.change = function() {
+        console.log("sfsdf");
+    };
 })

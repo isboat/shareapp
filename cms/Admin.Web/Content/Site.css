@@ -48,11 +48,13 @@ a {
     background-color: #e80c4d;
 }
 
-.login-form {
+.form {
     width: 300px;
     margin: 10% auto;
-    text-align: center;
     color: #ffffff
+}
+.login-form {
+    text-align: center;
 }
 
 .login-form .header {

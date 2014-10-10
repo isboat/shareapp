@@ -1,5 +1,26 @@
 ﻿<div class="fullscreen">
     <ng-include src="'/Templates/Shared/MenuBar.html'"></ng-include>
     
-
+    <div class="content">
+        
+        <div class="form">
+            <form ng-animate="animate">
+                <div class="form-group">
+                    <label for="orgImg">Organisation Logo</label>
+                    <input type="file" id="orgImg" ng-model="OrgViewData.OrgImg" ng-change="change()" placeholder="Upload img for org"/>
+                </div>
+                <div class="form-group">
+                    <label for="orgName">Organisation Name</label>
+                    <input type="text" id="orgName" ng-model="OrgViewData.Orgname" class="form-control" />
+                </div>
+                <div>
+                    <label for="orgDesc">Organisation Name</label>
+                    <textarea ng-model="OrgViewData.Description" id="orgDesc" class="form-control" rows="5"></textarea>
+                </div>
+                <div class="buttons">
+                    <input type="submit" value="Save" ng-click="save()" class="btn btn-lg btn-success" />
+                </div>
+            </form>
+        </div>
+    </div>
 </div>

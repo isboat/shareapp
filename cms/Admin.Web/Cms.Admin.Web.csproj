@@ -167,6 +167,7 @@
     <Content Include="Scripts\Lib\angular.js" />
     <Content Include="Scripts\Lib\jquery.js" />
     <Content Include="Scripts\Lib\ui-bootstrap.js" />
+    <Content Include="Scripts\Lib\ui-bootstrap2.js" />
     <Content Include="Service References\ServiceProvider\Cms.Admin.Web.ServiceProvider.CreateAdminAcctResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>

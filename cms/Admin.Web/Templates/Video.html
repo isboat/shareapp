@@ -1,3 +1,23 @@
 ﻿<div class="fullscreen">
     <ng-include src="'/Templates/Shared/MenuBar.html'"></ng-include>
+    <div class="content">
+        <div ng-if="videoList.length">
+            <div>List of uploaded videos</div>
+            <ul>
+                <li ng-repeat="vid in videoList">
+                    <div>
+                        <div>IMG</div>
+                        <div>{{vid.name}}</div>
+                        <div class="buttons">
+                            <button class="btn btn-sm btn-danger">Delete</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div ng-if="!videoList.length">
+            <!--<alert type="danger" close="closeAlert()">{{alertMsg}}</alert>-->
+            {{alertMsg}}
+        </div>
+    </div>
 </div>
